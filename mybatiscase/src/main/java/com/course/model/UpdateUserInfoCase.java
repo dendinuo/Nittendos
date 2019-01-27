@@ -3,7 +3,7 @@ package com.course.model;
 import lombok.Data;
 
 @Data
-public class AddUserCase {
+public class UpdateUserInfoCase {
 	private int id;
 	private String userName;
 	private String age;

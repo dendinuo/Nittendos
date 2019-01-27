@@ -10,7 +10,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 			<dataSource type="POOLED">
 				<!--加载数据库驱动和连接信息-->
 				<property name="driver" value="com.mysql.jdbc.Driver"/>
-				<property name="url" value="jdbc:mysql://127.0.0.1:3306/user_info"/>
+				<property name="url" value="jdbc:mysql://149.129.84.241:3306/user_info"/>
 				<property name="username" value="root"/>
 				<property name="password" value="root"/>
 			</dataSource>

@@ -4,20 +4,25 @@ import lombok.Data;
 
 @Data
 public class User {
-	private int orderid;
-	private String username;
-	private String names;
+	private int id;
+	private String userName;
 	private String password;
-	private long money;
+	private String age;
+	private String sex;
+	private String permission;
+	private String isDelete;
 	
 	@Override
 	public String toString() {
 		return(
-				"{"+"orderid"+orderid+","+
-						"username"+username+","+
-						"names"+names+","+
-						"password"+password+","+
-						"money"+money+"}");
+				"{"+"id:"+id+","+
+						"userName:"+userName+","+
+						"age:"+age+","+
+						"sex:"+sex+","+
+						"password:"+password+","+
+						"permission:"+permission+","+
+						"isDelete:"+isDelete+"}"
+						);
 	}
 }
 
