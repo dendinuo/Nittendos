@@ -3,22 +3,25 @@
 	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 	
-<mapper namespace="org.MybatisStudy" >
-	<select id="getUserCount" resultType="Integer">
-		select count(*) from userinfo;
+<mapper namespace="com.course.model" >
+	<select id="loginCase" parameterType="Integer"  resultType="com.course.model.LoginCase">
+		select * from logincase
+		where id = #{id}
 	</select>
-	
-	<insert id="addUser" parameterType="org.MybatisStudy.model.User">
-		insert into userinfo(userid,username,psw,money)
-		values ( #{userid},#{username},#{psw},#{money});
-	</insert>
-	
-	<update id="updateUser" parameterType="org.MybatisStudy.model.User">
-		update userinfo set money=#{money} where userid=#{userid};
-	</update>
-	
-	<delete id="deleteUser" parameterType="Integer">
-		delete from userinfo where userid=#{userid};
-	</delete>
-	
+	<select id="adduserCase" parameterType="Integer"  resultType="com.course.model.AddUserCase">
+		select * from addusercase
+		where id = #{id}
+	</select>
+	<select id="getuserlistCase" parameterType="Integer"  resultType="com.course.model.G">
+		select * from getuserlistcase
+		where id = #{id}
+	</select>
+	<select id="getuserinfoCase" parameterType="Integer"  resultType="com.course.model.AddUserCase">
+		select * from getuserinfocase
+		where id = #{id}
+	</select>
+	<select id="updateuserinfoCase" parameterType="Integer"  resultType="com.course.model.AddUserCase">
+		select * from updateuserinfocase
+		where id = #{id}
+	</select>
 </mapper>	

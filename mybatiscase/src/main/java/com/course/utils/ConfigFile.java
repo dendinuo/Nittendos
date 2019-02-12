@@ -8,13 +8,13 @@ import com.course.model.InterfaceName;
 public class ConfigFile {
 	private static ResourceBundle bundle = ResourceBundle.getBundle("application",Locale.CHINA);
 	public static String getUrl(InterfaceName name) {
-		String address = bundle.getString("getUserList.uri");
+		String address = bundle.getString("test.url");
 		String uri="";
 		
 		//最终测试地址
-		String testUrl = null;
+		String testUrl ;
 		if(name==InterfaceName.GETUSERLIST) {
-			uri=bundle.getString("getUserList.uri");
+			uri=bundle.getString("getuserlist.uri");
 		}
 		
 		if(name == InterfaceName.LOGIN) {
@@ -22,17 +22,17 @@ public class ConfigFile {
 		}
 		
 		if(name == InterfaceName.UPDATEUSERINFO) {
-			uri = bundle.getString("updateUserInfo.uri");
+			uri = bundle.getString("updateuserinfo.uri");
 		}
 		
 		if(name == InterfaceName.GETUSERINFO) {
-			uri = bundle.getString("getUserInfo.uri");
+			uri = bundle.getString("getuserinfo.uri");
 		}
 		
 		if(name == InterfaceName.ADDUSER) {
-			uri = bundle.getString("addUser.uri");
+			uri = bundle.getString("adduser.uri");
 		}
-		
+		testUrl = address + uri ;
 		return testUrl;
 		
 	}

@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.ibatis.session.SqlSession;
+import org.jsoup.helper.DataUtil;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.course.config.TestConfig;
@@ -14,6 +16,7 @@ import com.course.utils.DatabaseUtil;
 
 public class LoginTest {
 	
+	@BeforeTest(groups="BeforeTest",description="测试前准备")
 	public void beforeTest() {
 		TestConfig.getUserInfoUrl = ConfigFile.getUrl(InterfaceName.GETUSERINFO);
 		TestConfig.getUserlistUrl = ConfigFile.getUrl(InterfaceName.GETUSERLIST);
@@ -28,12 +31,16 @@ public class LoginTest {
 	public void loginTrue() throws IOException {
 		SqlSession session = DatabaseUtil.getSqlSession();
 		LoginCase logincase = session.selectOne("loginCase",1);
-		System.out.println( logincase.toString() );
+		System.out.println( logincase );
 		System.out.println( TestConfig.loginUrl );
 	}
 	
 	@Test(groups="loginFalse",description="登录失败接口测试")
-	public void loginFalse() {
+	public void loginFalse() throws IOException {
+		SqlSession session = DatabaseUtil.getSqlSession();
+		LoginCase logincase = session.selectOne("loginCase",3);
+		System.out.println( logincase );
+		System.out.println( TestConfig.loginUrl );
 		
 	}
 	

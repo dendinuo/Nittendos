@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2248" started-at="2019-02-12T06:24:17Z" finished-at="2019-02-12T06:24:19Z">
+    <groups>
+      <group name="loginTrue">
+        <method signature="LoginTest.loginTrue()[pri:0, instance:com.course.cases.LoginTest@4b9e13df]" name="loginTrue" class="com.course.cases.LoginTest"/>
+      </group> <!-- loginTrue -->
+      <group name="loginFalse">
+        <method signature="LoginTest.loginFalse()[pri:0, instance:com.course.cases.LoginTest@4b9e13df]" name="loginFalse" class="com.course.cases.LoginTest"/>
+      </group> <!-- loginFalse -->
+    </groups>
+    <test name="Default test" duration-ms="2248" started-at="2019-02-12T06:24:17Z" finished-at="2019-02-12T06:24:19Z">
+      <class name="com.course.cases.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.course.cases.LoginTest@4b9e13df]" name="beforeTest" is-config="true" duration-ms="76" started-at="2019-02-12T06:24:17Z" description="测试前准备" finished-at="2019-02-12T06:24:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginFalse()[pri:0, instance:com.course.cases.LoginTest@4b9e13df]" name="loginFalse" duration-ms="1360" started-at="2019-02-12T06:24:17Z" description="登录失败接口测试" finished-at="2019-02-12T06:24:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFalse -->
+        <test-method status="PASS" signature="loginTrue()[pri:0, instance:com.course.cases.LoginTest@4b9e13df]" name="loginTrue" duration-ms="784" started-at="2019-02-12T06:24:18Z" description="登录成功接口测试" finished-at="2019-02-12T06:24:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTrue -->
+      </class> <!-- com.course.cases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
