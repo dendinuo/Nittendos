@@ -10,6 +10,8 @@ public class ConfigFile {
 	public static String getUrl(InterfaceName name) {
 		String address = bundle.getString("getUserList.uri");
 		String uri="";
+		
+		//最终测试地址
 		String testUrl = null;
 		if(name==InterfaceName.GETUSERLIST) {
 			uri=bundle.getString("getUserList.uri");
