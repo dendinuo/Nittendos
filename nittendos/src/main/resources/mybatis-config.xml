@@ -8,6 +8,6 @@
 		<package name="org.course.model"/>
 	</typeAliases>
 	<mappers>
-		<mapper resource="mapper/SQLMapper.xml"/>
+		<mapper resource="mapper/mysql.xml"/>
 	</mappers>
 </configuration>	
