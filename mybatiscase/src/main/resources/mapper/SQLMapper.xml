@@ -12,15 +12,15 @@
 		select * from addusercase
 		where id = #{id}
 	</select>
-	<select id="getuserlistCase" parameterType="Integer"  resultType="com.course.model.G">
+	<select id="getuserlistCase" parameterType="Integer"  resultType="com.course.model.GetUserListCase">
 		select * from getuserlistcase
 		where id = #{id}
 	</select>
-	<select id="getuserinfoCase" parameterType="Integer"  resultType="com.course.model.AddUserCase">
+	<select id="getuserinfoCase" parameterType="Integer"  resultType="com.course.model.GetUserInfoCase">
 		select * from getuserinfocase
 		where id = #{id}
 	</select>
-	<select id="updateuserinfoCase" parameterType="Integer"  resultType="com.course.model.AddUserCase">
+	<select id="updateuserinfoCase" parameterType="Integer"  resultType="com.course.model.UpdateUserInfoCase">
 		select * from updateuserinfocase
 		where id = #{id}
 	</select>
