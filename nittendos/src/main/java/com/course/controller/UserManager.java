@@ -50,9 +50,10 @@ public class UserManager {
 	public Boolean login( HttpServletResponse response, @RequestBody  User user) {
 		int i = template.selectOne("login",user);
 		Cookie cookie = new Cookie("login","true");
-		response.addCookie(cookie);
+		
 		log.info("查询到的结果 i="+i);
 		if(i==1) {
+			response.addCookie(cookie);
 			log.info("登陆的用户是："+user.getUserName());
 			return true;
 		}

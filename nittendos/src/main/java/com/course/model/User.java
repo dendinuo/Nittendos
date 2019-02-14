@@ -12,7 +12,7 @@ public class User {
 	private String permission;
 	private String isDelete;
 	
-	@Override
+/*	@Override
 	public String toString() {
 		return(
 				"{"+"id:"+id+","+
@@ -23,6 +23,6 @@ public class User {
 						"permission:"+permission+","+
 						"isDelete:"+isDelete+"}"
 						);
-	}
+	}*/
 }
 

@@ -9,16 +9,64 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">用户管理系统测试套件</th></tr>
-<tr><td><a href="#t0">用户管理系统测试用例</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">3,979</td><td></td><td></td></tr>
+<tr><td><a href="#t0">用户管理系统测试用例</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">4</td><td class="num">14,474</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">用户管理系统测试套件</th></tr></tbody><tbody id="t0"><tr><th colspan="4">用户管理系统测试用例 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.course.cases.AddUserTest</td><td><a href="#m0">addUser</a></td><td rowspan="1">1550063268215</td><td rowspan="1">436</td></tr><tr class="passedodd"><td rowspan="1">com.course.cases.GetUserInfoTest</td><td><a href="#m1">getUserInfo</a></td><td rowspan="1">1550063268654</td><td rowspan="1">451</td></tr><tr class="passedeven"><td rowspan="1">com.course.cases.GetUserListTest</td><td><a href="#m2">getuserlist</a></td><td rowspan="1">1550063270008</td><td rowspan="1">442</td></tr><tr class="passedodd"><td rowspan="2">com.course.cases.LoginTest</td><td><a href="#m3">loginFalse</a></td><td rowspan="1">1550063267793</td><td rowspan="1">418</td></tr><tr class="passedodd"><td><a href="#m4">loginTrue</a></td><td rowspan="1">1550063266781</td><td rowspan="1">1008</td></tr><tr class="passedeven"><td rowspan="2">com.course.cases.UpdateUserInfoTest</td><td><a href="#m5">deleteuser</a></td><td rowspan="1">1550063269543</td><td rowspan="1">462</td></tr><tr class="passedeven"><td><a href="#m6">updateuserinfo</a></td><td rowspan="1">1550063269109</td><td rowspan="1">431</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">用户管理系统测试套件</th></tr></tbody><tbody id="t0"><tr><th colspan="4">用户管理系统测试用例 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.course.cases.AddUserTest</td><td><a href="#m0">addUser</a></td><td rowspan="1">1550136068012</td><td rowspan="1">3108</td></tr><tr class="failedodd"><td rowspan="1">com.course.cases.GetUserInfoTest</td><td><a href="#m1">getUserInfo</a></td><td rowspan="1">1550136071126</td><td rowspan="1">3012</td></tr><tr class="failedeven"><td rowspan="1">com.course.cases.GetUserListTest</td><td><a href="#m2">getuserlist</a></td><td rowspan="1">1550136078053</td><td rowspan="1">825</td></tr><tr class="failedodd"><td rowspan="1">com.course.cases.UpdateUserInfoTest</td><td><a href="#m3">deleteuser</a></td><td rowspan="1">1550136074988</td><td rowspan="1">3060</td></tr><tr><th colspan="4">用户管理系统测试用例 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.course.cases.LoginTest</td><td><a href="#m4">loginFalse</a></td><td rowspan="1">1550136066929</td><td rowspan="1">1079</td></tr><tr class="passedeven"><td><a href="#m5">loginTrue</a></td><td rowspan="1">1550136064470</td><td rowspan="1">2456</td></tr><tr class="passedodd"><td rowspan="1">com.course.cases.UpdateUserInfoTest</td><td><a href="#m6">updateuserinfo</a></td><td rowspan="1">1550136074140</td><td rowspan="1">845</td></tr></tbody>
 </table>
-<h2>用户管理系统测试用例</h2><h3 id="m0">com.course.cases.AddUserTest#addUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.course.cases.GetUserInfoTest#getUserInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.course.cases.GetUserListTest#getuserlist</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.course.cases.LoginTest#loginFalse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.course.cases.LoginTest#loginTrue</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.course.cases.UpdateUserInfoTest#deleteuser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>用户管理系统测试用例</h2><h3 id="m0">com.course.cases.AddUserTest#addUser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for addUser
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for addUser
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at com.course.cases.AddUserTest.addUser(AddUserTest.java:36)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for addUser
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 28 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.course.cases.GetUserInfoTest#getUserInfo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for 111
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for 111
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at com.course.cases.GetUserInfoTest.getUserInfo(GetUserInfoTest.java:35)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for 111
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 28 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.course.cases.GetUserListTest#getuserlist</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.json.JSONException: Value {&quot;path&quot;:&quot;\/v1\/getUserList&quot;,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;timestamp&quot;:&quot;2019-02-14T09:21:18.871+0000&quot;,&quot;status&quot;:404} of type org.json.JSONObject cannot be converted to JSONArray
+	at org.json.JSON.typeMismatch(JSON.java:111)
+	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:96)
+	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:108)
+	at com.course.cases.GetUserListTest.getJsonResult(GetUserListTest.java:66)
+	at com.course.cases.GetUserListTest.getuserlist(GetUserListTest.java:31)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.course.cases.UpdateUserInfoTest#deleteuser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for 删除成功
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for 删除成功
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at com.course.cases.UpdateUserInfoTest.deleteuser(UpdateUserInfoTest.java:44)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for 删除成功
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 28 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.course.cases.LoginTest#loginFalse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.course.cases.LoginTest#loginTrue</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m6">com.course.cases.UpdateUserInfoTest#updateuserinfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
