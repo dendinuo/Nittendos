@@ -59,6 +59,13 @@
 			<artifactId>lombok</artifactId>
 			<version>1.18.4</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20180130</version>
+		</dependency>
+		
    		<!--fastjson-->
 		<dependency>
 			<groupId>com.alibaba</groupId>

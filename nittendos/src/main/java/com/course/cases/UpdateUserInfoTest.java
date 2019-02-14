@@ -21,11 +21,18 @@ import com.course.utils.DatabaseUtil;
 public class UpdateUserInfoTest {
 	
 	@Test(dependsOnGroups="loginTrue",description="更新用户信息的接口测试")
-	public void updateuserinfo() throws IOException {
+	public void updateuserinfo() throws IOException, InterruptedException {
 		SqlSession sqlsession = DatabaseUtil.getSqlSession();
-		UpdateUserInfoCase updateuser = sqlsession.selectOne("updateuserinfoCase", 1);
-		System.out.println( updateuser.toString() );
+		UpdateUserInfoCase updateUserInfoCase = sqlsession.selectOne("updateuserinfoCase", 1);
+		System.out.println( updateUserInfoCase.toString() );
 		System.out.println( TestConfig.updateUserInfoUrl);
+		
+		int result = getResult(updateUserInfoCase);
+		 Thread.sleep(2000);
+	        User user = sqlsession.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
+	        System.out.println(user.toString());
+	        Assert.assertNotNull(user);
+	        Assert.assertNotNull(result);
 	}
 	
 	@Test(dependsOnGroups="loginTrue",description="删除用户的接口测试")
@@ -43,8 +50,6 @@ public class UpdateUserInfoTest {
         Thread.sleep(2000);
         User user = sqlsession.selectOne(updateUserInfoCase.getExpected(),updateUserInfoCase);
         System.out.println(user.toString());
-
-
         Assert.assertNotNull(user);
         Assert.assertNotNull(result);
 	}

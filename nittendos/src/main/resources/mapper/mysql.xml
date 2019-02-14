@@ -20,7 +20,7 @@
         values (#{userName},#{password},#{sex},#{age},#{permission},#{isDelete})
     </insert>
 
-    <!--获取用户信息sql-->
+    <!--获取用户信息-->
     <select id="getUserInfo" parameterType="com.course.model.User" resultType="com.course.model.User">
         select * from user
         <trim prefix="WHERE" prefixOverrides="and">
