@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods, 4 failed,   3 passed</span>
+                    <span class="method-stats">7 methods, 5 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -120,6 +120,11 @@
                         <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.course.cases.GetUserListTest" hash-for-method="getuserlist">getuserlist</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.course.cases.UpdateUserInfoTest" hash-for-method="updateuserinfo">updateuserinfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content failed suite-用户管理系统测试套件 -->
                   </li>
                   <li>
@@ -137,11 +142,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.course.cases.LoginTest" hash-for-method="loginTrue">loginTrue</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-用户管理系统测试套件" title="com.course.cases.UpdateUserInfoTest" hash-for-method="updateuserinfo">updateuserinfo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-用户管理系统测试套件 -->
@@ -192,6 +192,31 @@ Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does
           <div class="suite-用户管理系统测试套件-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">com.course.cases.GetUserListTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getuserlist">
+                  </a> <!-- getuserlist -->
+                  <span class="method-name">getuserlist</span>
+                  <div class="stack-trace">org.json.JSONException: Value {&quot;path&quot;:&quot;\/v1\/getUserList&quot;,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;timestamp&quot;:&quot;2019-02-15T01:48:33.150+0000&quot;,&quot;status&quot;:404} of type org.json.JSONObject cannot be converted to JSONArray
+	at org.json.JSON.typeMismatch(JSON.java:111)
+	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:96)
+	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:108)
+	at com.course.cases.GetUserListTest.getJsonResult(GetUserListTest.java:66)
+	at com.course.cases.GetUserListTest.getuserlist(GetUserListTest.java:31)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(获取用户性别为男性的接口测试)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-用户管理系统测试套件-class-failed -->
+          <div class="suite-用户管理系统测试套件-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.course.cases.UpdateUserInfoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -207,7 +232,7 @@ Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
-	at com.course.cases.UpdateUserInfoTest.deleteuser(UpdateUserInfoTest.java:44)
+	at com.course.cases.UpdateUserInfoTest.deleteuser(UpdateUserInfoTest.java:51)
 Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for 删除成功
 	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
 	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
@@ -220,29 +245,29 @@ Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does
 (删除用户的接口测试)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-用户管理系统测试套件-class-failed -->
-          <div class="suite-用户管理系统测试套件-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.course.cases.GetUserListTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getuserlist">
-                  </a> <!-- getuserlist -->
-                  <span class="method-name">getuserlist</span>
-                  <div class="stack-trace">org.json.JSONException: Value {&quot;path&quot;:&quot;\/v1\/getUserList&quot;,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:&quot;No message available&quot;,&quot;timestamp&quot;:&quot;2019-02-14T09:21:18.871+0000&quot;,&quot;status&quot;:404} of type org.json.JSONObject cannot be converted to JSONArray
-	at org.json.JSON.typeMismatch(JSON.java:111)
-	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:96)
-	at org.json.JSONArray.&lt;init&gt;(JSONArray.java:108)
-	at com.course.cases.GetUserListTest.getJsonResult(GetUserListTest.java:66)
-	at com.course.cases.GetUserListTest.getuserlist(GetUserListTest.java:31)
+                  <a name="updateuserinfo">
+                  </a> <!-- updateuserinfo -->
+                  <span class="method-name">updateuserinfo</span>
+                  <div class="stack-trace">org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for 更新成功
+### Cause: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for 更新成功
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:150)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:77)
+	at com.course.cases.UpdateUserInfoTest.updateuserinfo(UpdateUserInfoTest.java:32)
+Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does not contain value for 更新成功
+	at org.apache.ibatis.session.Configuration$StrictMap.get(Configuration.java:888)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:721)
+	at org.apache.ibatis.session.Configuration.getMappedStatement(Configuration.java:714)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 28 more
 ... Removed 25 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(获取用户性别为男性的接口测试)                  </em>
+(更新用户信息的接口测试)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -280,23 +305,6 @@ Caused by: java.lang.IllegalArgumentException: Mapped Statements collection does
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-用户管理系统测试套件-class-failed -->
-          <div class="suite-用户管理系统测试套件-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.course.cases.UpdateUserInfoTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="updateuserinfo">
-                  </a> <!-- updateuserinfo -->
-                  <span class="method-name">updateuserinfo</span>
-                  <em>
-(更新用户信息的接口测试)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-用户管理系统测试套件-class-passed -->
           <div class="suite-用户管理系统测试套件-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -424,36 +432,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addUser')
 data.setCell(0, 2, 'com.course.cases.AddUserTest')
-data.setCell(0, 3, 3108);
+data.setCell(0, 3, 3242);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deleteuser')
+data.setCell(1, 1, 'updateuserinfo')
 data.setCell(1, 2, 'com.course.cases.UpdateUserInfoTest')
-data.setCell(1, 3, 3060);
+data.setCell(1, 3, 2989);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'getUserInfo')
 data.setCell(2, 2, 'com.course.cases.GetUserInfoTest')
-data.setCell(2, 3, 3012);
+data.setCell(2, 3, 2969);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginTrue')
-data.setCell(3, 2, 'com.course.cases.LoginTest')
-data.setCell(3, 3, 2456);
+data.setCell(3, 1, 'deleteuser')
+data.setCell(3, 2, 'com.course.cases.UpdateUserInfoTest')
+data.setCell(3, 3, 2958);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginFalse')
+data.setCell(4, 1, 'loginTrue')
 data.setCell(4, 2, 'com.course.cases.LoginTest')
-data.setCell(4, 3, 1079);
+data.setCell(4, 3, 2453);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'updateuserinfo')
-data.setCell(5, 2, 'com.course.cases.UpdateUserInfoTest')
-data.setCell(5, 3, 845);
+data.setCell(5, 1, 'getuserlist')
+data.setCell(5, 2, 'com.course.cases.GetUserListTest')
+data.setCell(5, 3, 1038);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'getuserlist')
-data.setCell(6, 2, 'com.course.cases.GetUserListTest')
-data.setCell(6, 3, 825);
+data.setCell(6, 1, 'loginFalse')
+data.setCell(6, 2, 'com.course.cases.LoginTest')
+data.setCell(6, 3, 873);
 window.suiteTableData['用户管理系统测试套件']= { tableData: data, tableDiv: 'times-div-用户管理系统测试套件'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-用户管理系统测试套件">
               </div> <!-- times-div-用户管理系统测试套件 -->
             </div> <!-- times-div -->
@@ -486,11 +494,11 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loginTrue</span>
-                <span class="method-start">57 ms</span>
+                <span class="method-start">72 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">loginFalse</span>
-                <span class="method-start">2516 ms</span>
+                <span class="method-start">2527 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -499,7 +507,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addUser</span>
-                <span class="method-start">3599 ms</span>
+                <span class="method-start">3406 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -508,20 +516,22 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getUserInfo</span>
-                <span class="method-start">6713 ms</span>
+                <span class="method-start">6655 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.course.cases.UpdateUserInfoTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">updateuserinfo</span>
-                <span class="method-start">9727 ms</span>
+                <span class="method-start">9628 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">deleteuser</span>
-                <span class="method-start">10575 ms</span>
+                <span class="method-start">12622 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -530,7 +540,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">getuserlist</span>
-                <span class="method-start">13640 ms</span>
+                <span class="method-start">15582 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

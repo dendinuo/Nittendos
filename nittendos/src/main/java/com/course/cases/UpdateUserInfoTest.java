@@ -21,7 +21,7 @@ import com.course.utils.DatabaseUtil;
 public class UpdateUserInfoTest {
 	
 	@Test(dependsOnGroups="loginTrue",description="更新用户信息的接口测试")
-	public void updateuserinfo() throws IOException, InterruptedException {
+	public void updateuserinfo() throws IOException, InterruptedException, JSONException {
 		SqlSession sqlsession = DatabaseUtil.getSqlSession();
 		UpdateUserInfoCase updateUserInfoCase = sqlsession.selectOne("updateuserinfoCase", 1);
 		System.out.println( updateUserInfoCase.toString() );
